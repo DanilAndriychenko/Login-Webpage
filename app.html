@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+<div>
+    <form id="mainContainer" action="#successfulLogin">
+        <div class="formGroup">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" id="email" required>
+            <div id="emailWarning" class="incorrectInputWarning opaque">Please, follow this email syntax: "username@domain.com"</div>
+        </div>
+        <div class="formGroup">
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter password" id="password" required>
+            <div id="passwordWarning" class="incorrectInputWarning opaque">Password should contain at least 8 chars, 1 digit and 1 letter of each cases</div>
+        </div>
+        <div class="formGroup">
+            <label for="confirmPassword">Confirm password:</label>
+            <input type="password" placeholder="Repeat your password" id="confirmPassword" required>
+            <div id="passwordConfirmationWarning" class="incorrectInputWarning opaque">Passwords do not match</div>
+        </div>
+        <div class="formGroup">
+            <label id="rememberMe" for="rememberMe">
+                <input type="checkbox">
+                <em>Remember me</em>
+            </label>
+            <button id="buttonLogin" type="submit">LOG IN</button>
+            <a id="forgotPassword" href="#forgotPasswordForm">Forgot password?</a>
+        </div>
+    </form>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
